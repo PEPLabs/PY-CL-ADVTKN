@@ -1,7 +1,7 @@
 """
 Advanced Tokenization
 
-Earlier, we explored techniques for pre-processing the text prior to the analysis. The techniques involved removing punctuations, removing stopwords, and word and sentence tokenization. In this module we continue to explore more advanced text processing techniques that will help the model understand the natural language better.
+Earlier, we explored techniques for pre-processing the text prior to the analysis. The techniques involved removing punctuations, removing stopwords, and word and sentence tokenization. In this lab we continue to explore more advanced text processing techniques that will help the model understand the natural language better.
 """
 
 
@@ -29,10 +29,10 @@ def sampleStemming():
     print(stemmed_words)
 
 """
-Complete this following function to tokenize and stem text. Your text should contain a word that will stem into 'discovri'. The test will check for the existence of the word 'discoveri' in your list of stemmed words
+Complete this following function to tokenize and stem text. Your text should contain at least 10 words and one or more words that will stem into 'discoveri'. The test will check for the existence of the word 'discoveri' in your list of stemmed words
 """
 def stemmingExercise():
-    text = "your_own_text_here"
+    text = ""
     word_tokens = None
     
     stemmer = None
@@ -61,13 +61,16 @@ def sampleLemmatizing():
     print(lemmatized_words)
 
 """
-Complete this following function to tokenize and lemmatize your own text. Your text should contain a word that will stem into 'scarf'. The test will check for the existence of the word 'scarf' in your list of stemmed words
+Complete this following function to tokenize and lemmatize your own text. Your text should contain at least 10 words and contain a word that will lemmatize into 'race' that is not 'race' in the original text. The test will check for the existence of the word 'race' in your list of lemmatized words.
+
+Example:
+Original Text: I love races.
+Result: ['I', 'love', 'race', '.']
 """
 def lemmatizingExercise():
     text = ""
     word_tokens = None
-    
     lemmatizer = None
-    lemmatized_words = None
+    lemmatized_words = text
 
     return lemmatized_words
